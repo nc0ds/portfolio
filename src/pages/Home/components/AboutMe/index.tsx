@@ -1,7 +1,11 @@
+import { useAboutMe } from './hooks/useAboutMe';
+
 import { Container, Flex, Box, Heading, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 export function AboutMe(): JSX.Element {
+	const { animations } = useAboutMe();
+
 	return (
 		<Container
 			as='section'
@@ -15,29 +19,13 @@ export function AboutMe(): JSX.Element {
 				<Box as='section'>
 					<Heading
 						as={motion.h2}
-						position={'relative'}
-						initial={{
-							opacity: 0,
-							top: '1rem',
-						}}
-						whileInView={{
-							opacity: 1,
-							top: 0,
-						}}
+						{...animations.heading}
 					>
 						But hey, what's about me?
 					</Heading>
 					<Text
 						as={motion.p}
-						position='relative'
-						initial={{
-							opacity: 0,
-							left: '-1rem',
-						}}
-						whileInView={{
-							opacity: 1,
-							left: 0,
-						}}
+						{...animations.text}
 					>
 						My name is Nathan Caio, I am from Brazil and I am a web developer.
 						The coolest part, in my humble opinion, is that I am a pretty much
@@ -48,29 +36,13 @@ export function AboutMe(): JSX.Element {
 				<Box as='section'>
 					<Heading
 						as={motion.h2}
-						position='relative'
-						initial={{
-							opacity: 0,
-							top: '1rem',
-						}}
-						whileInView={{
-							opacity: 1,
-							top: 0,
-						}}
+						{...animations.heading}
 					>
 						And what do I do?
 					</Heading>
 					<Text
 						as={motion.p}
-						position='relative'
-						initial={{
-							opacity: 0,
-							left: '-1rem',
-						}}
-						whileInView={{
-							opacity: 1,
-							left: 0,
-						}}
+						{...animations.text}
 					>
 						As I said, I am a web developer, but I have a focus on Front-End. My
 						main stacks that I use to build web applications are React and

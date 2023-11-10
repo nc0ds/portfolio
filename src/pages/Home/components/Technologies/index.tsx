@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { TechIcon } from './components/TechIcon';
 
 export function Technologies(): JSX.Element {
-	const { icons } = useTechnologies();
+	const { icons, animations } = useTechnologies();
 
 	return (
 		<Container
@@ -15,29 +15,13 @@ export function Technologies(): JSX.Element {
 		>
 			<Heading
 				as={motion.h2}
-				position='relative'
-				initial={{
-					opacity: 0,
-					top: '1rem',
-				}}
-				whileInView={{
-					opacity: 1,
-					top: 0,
-				}}
+				{...animations.heading}
 			>
 				Ok, but what technologies I know?
 			</Heading>
 			<Text
 				as={motion.p}
-				position='relative'
-				initial={{
-					opacity: 0,
-					left: '-1rem',
-				}}
-				whileInView={{
-					opacity: 1,
-					left: 0,
-				}}
+				{...animations.text}
 			>
 				Let me show you some of the techs I know. The cool part is that it
 				doesn't stop there.
