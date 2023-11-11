@@ -1,4 +1,20 @@
-import { Flex, Heading, Text, Link } from '@chakra-ui/react';
+import { usePlace } from './hooks/usePlace';
+
+import { Flex, Heading, Text, Link, LinkProps } from '@chakra-ui/react';
+import { motion, MotionProps } from 'framer-motion';
+
+type MotionLinkProps = LinkProps & MotionProps & React.PropsWithChildren;
+
+function MotionLink({ children, ...props }: MotionLinkProps) {
+	return (
+		<Link
+			as={motion.a}
+			{...props}
+		>
+			{children}
+		</Link>
+	);
+}
 
 type PlaceProps = {
 	place: {
@@ -15,9 +31,11 @@ type PlaceProps = {
 export function Place({
 	place: { name, description, url, dates },
 }: PlaceProps): JSX.Element {
+	const { animations } = usePlace();
+
 	return (
 		<Flex
-			as={Link}
+			as={MotionLink}
 			isExternal
 			href={url}
 			direction='column'
@@ -26,13 +44,17 @@ export function Place({
 			color='sand.sand12'
 			borderLeftWidth={'0.3rem'}
 			borderLeftColor='yellow.yellow9'
-			transition='0.2s ease-in-out'
 			_hover={{
+				textDecoration: 'none',
+				'& > h3': {
+					textDecoration: 'underline',
+				},
 				'& > p': {
 					opacity: 1,
 					maxH: '1.5rem',
 				},
 			}}
+			{...animations.place}
 		>
 			<Heading
 				as='h3'

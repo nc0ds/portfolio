@@ -1,18 +1,28 @@
 import { usePlacesWorked } from './hooks/usePlacesWorked';
 
 import { Container, Flex, Heading, Text } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
 import { Place } from './components/Place';
 
 export function PlacesWorked(): JSX.Element {
-	const { places } = usePlacesWorked();
+	const { places, animations } = usePlacesWorked();
 
 	return (
 		<Container
 			as='section'
 			pt='5rem'
 		>
-			<Heading as='h2'>Places I worked</Heading>
-			<Text>
+			<Heading
+				as={motion.h2}
+				{...animations.heading}
+			>
+				Places I worked
+			</Heading>
+			<Text
+				as={motion.p}
+				{...animations.text}
+			>
 				I know, it is a humble curriculum, but I did had pretty good
 				experiences.
 			</Text>
