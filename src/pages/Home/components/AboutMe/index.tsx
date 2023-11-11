@@ -9,7 +9,6 @@ export function AboutMe(): JSX.Element {
 	return (
 		<Container
 			as='section'
-			maxW='6xl'
 			pt='5rem'
 		>
 			<Flex

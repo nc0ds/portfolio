@@ -16,6 +16,7 @@ import { Button } from './components/Button';
 import { Link } from './components/Link';
 import { Mark } from './components/Mark';
 import { Heading } from './components/Heading';
+import { Container } from './components/Container';
 
 const colors = {
 	sand: { ...sandDark, ...sandDarkA },
@@ -91,6 +92,7 @@ export const theme = extendTheme(
 			Link,
 			Mark,
 			Heading,
+			Container,
 		},
 	}
 );

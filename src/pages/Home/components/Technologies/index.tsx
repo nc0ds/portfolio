@@ -10,7 +10,6 @@ export function Technologies(): JSX.Element {
 	return (
 		<Container
 			as='section'
-			maxW='6xl'
 			pt='5rem'
 		>
 			<Heading
