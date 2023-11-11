@@ -17,7 +17,7 @@ export function Technologies(): JSX.Element {
 				as={motion.h2}
 				{...animations.heading}
 			>
-				Ok, but what technologies I know?
+				Ok, and what technologies I know?
 			</Heading>
 			<Text
 				as={motion.p}

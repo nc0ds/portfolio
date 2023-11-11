@@ -10,7 +10,7 @@ export function TechIcon({ icon: Icon, title }: TechIconProps): JSX.Element {
 		<Flex
 			w='fit-content'
 			p='1rem'
-			fontSize='3rem'
+			fontSize='4rem'
 			justify='center'
 			align='center'
 			borderWidth='1px'
