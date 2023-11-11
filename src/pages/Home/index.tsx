@@ -5,6 +5,7 @@ import {
 	AboutMe,
 	Technologies,
 	HighlightedProjects,
+	PlacesWorked,
 } from './components';
 
 export function Home(): JSX.Element {
@@ -14,6 +15,7 @@ export function Home(): JSX.Element {
 			<AboutMe />
 			<Technologies />
 			<HighlightedProjects />
+			<PlacesWorked />
 		</Box>
 	);
 }
