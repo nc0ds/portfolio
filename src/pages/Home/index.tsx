@@ -6,6 +6,7 @@ import {
 	Technologies,
 	HighlightedProjects,
 	PlacesWorked,
+	Extra,
 } from './components';
 
 export function Home(): JSX.Element {
@@ -16,6 +17,7 @@ export function Home(): JSX.Element {
 			<Technologies />
 			<HighlightedProjects />
 			<PlacesWorked />
+			<Extra />
 		</Box>
 	);
 }
