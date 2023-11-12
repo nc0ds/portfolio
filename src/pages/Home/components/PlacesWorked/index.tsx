@@ -32,7 +32,10 @@ export function PlacesWorked(): JSX.Element {
 				gap='2rem'
 			>
 				{places.map((item) => (
-					<Place place={item} />
+					<Place
+						place={item}
+						key={item.name}
+					/>
 				))}
 			</Flex>
 		</Container>

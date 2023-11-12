@@ -36,6 +36,7 @@ export function HighlightedProjects(): JSX.Element {
 						project={item}
 						index={index + 1}
 						colSpan={index === highlightedProjects.length - 1 ? 3 : 1}
+						key={item.name}
 					/>
 				))}
 			</Grid>

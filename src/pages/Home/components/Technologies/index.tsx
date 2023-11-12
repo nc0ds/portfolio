@@ -35,6 +35,7 @@ export function Technologies(): JSX.Element {
 					<TechIcon
 						icon={item.icon}
 						title={item.title}
+						key={item.title}
 					/>
 				))}
 			</SimpleGrid>
