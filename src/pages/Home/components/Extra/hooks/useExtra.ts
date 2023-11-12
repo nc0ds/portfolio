@@ -11,9 +11,9 @@ export function useExtra() {
 			},
 		},
 		{
-			title: 'Studing the community-driven CS curriculum',
+			title: 'Studying the community-driven CS curriculum',
 			description:
-				'I am currently studing the contents of this repository, a community-driven computer science curriculum made entirely with free courses and resources from the internet. You can check it out by clicking here.',
+				'I am currently studying the contents of this repository, a community-driven computer science curriculum made entirely with free courses and resources from the internet. You can check it out by clicking here.',
 			url: 'https://github.com/ossu/computer-science',
 			img: {
 				url: 'https://camo.githubusercontent.com/571d23edad9da0a656fdf95f6483ac63585ea09542b7620749880627b4b2161e/68747470733a2f2f692e696d6775722e636f6d2f6b5959435874432e706e67',
