@@ -72,7 +72,11 @@ export function ExtraCard({
 			borderRadius='md'
 			w='100%'
 			minH='20rem'
-			direction={variant === 'imgLeft' ? 'row-reverse' : 'row'}
+			direction={[
+				'column-reverse',
+				null,
+				variant === 'imgLeft' ? 'row-reverse' : 'row',
+			]}
 			color='sand.sand12'
 			overflow={'hidden'}
 		>
@@ -94,7 +98,7 @@ export function ExtraCard({
 				src={img.url}
 				alt={img.alt}
 				h='20rem'
-				w='40%'
+				w={['100%', null, '40%']}
 				objectFit={'cover'}
 			/>
 		</Component>

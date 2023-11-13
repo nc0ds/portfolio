@@ -22,7 +22,7 @@ export function TechIcon({ icon: Icon, title }: TechIconProps): JSX.Element {
 			_hover={{
 				borderColor: 'yellow.yellow9',
 				boxShadow: '0 0 15px #ffe629, inset 0 0 10px #ffe62988',
-				transform: 'scale(1.1)',
+				transform: [null, 'scale(1.1)'],
 				color: 'yellow.yellow9',
 			}}
 		>

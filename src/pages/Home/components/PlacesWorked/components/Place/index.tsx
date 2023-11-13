@@ -51,7 +51,7 @@ export function Place({
 				},
 				'& > p': {
 					opacity: 1,
-					maxH: '1.5rem',
+					maxH: [null, null, null, '3rem'],
 				},
 			}}
 			{...animations.place}
@@ -64,8 +64,8 @@ export function Place({
 				{name} ({dates.from} - {dates.to})
 			</Heading>
 			<Text
-				maxH='0'
-				opacity={0}
+				maxH={['10rem', null, null, '0']}
+				opacity={[1, null, null, 0]}
 				transition='0.2s ease-in-out'
 			>
 				<Text

@@ -41,7 +41,7 @@ export function ContactMe(): JSX.Element {
 					isExternal
 					href='mailto:nathancaio1715@gmail.com?subject=Portfolio%20-%20Contact'
 					w='100%'
-					gap='2rem'
+					gap={['0.5rem', '1rem', '2rem']}
 					align={'center'}
 					fontSize='2rem'
 					color='yellow.yellow9contrast'
@@ -54,7 +54,7 @@ export function ContactMe(): JSX.Element {
 					isExternal
 					href='https://www.linkedin.com/in/nathan-caio-da-silva-38b769186/'
 					w='100%'
-					gap='2rem'
+					gap={['0.5rem', '1rem', '2rem']}
 					align={'center'}
 					fontSize='2rem'
 					color='yellow.yellow9contrast'
@@ -67,7 +67,7 @@ export function ContactMe(): JSX.Element {
 					isExternal
 					href='https://t.me/nc0ds'
 					w='100%'
-					gap='2rem'
+					gap={['0.5rem', '1rem', '2rem']}
 					align={'center'}
 					fontSize='2rem'
 					color='yellow.yellow9contrast'

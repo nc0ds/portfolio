@@ -27,7 +27,8 @@ export function HighlightedProjects(): JSX.Element {
 				take a look.
 			</Text>
 			<Grid
-				templateColumns={'repeat(3, 1fr)'}
+				templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)']}
+				templateRows={['repeat(4, 1fr)', null, 'repeat(2, 1fr)']}
 				gap={'2rem'}
 				mt='2rem'
 			>
@@ -35,7 +36,9 @@ export function HighlightedProjects(): JSX.Element {
 					<ProjectCard
 						project={item}
 						index={index + 1}
-						colSpan={index === highlightedProjects.length - 1 ? 3 : 1}
+						colSpan={
+							index === highlightedProjects.length - 1 ? [1, null, 3] : 1
+						}
 						key={item.name}
 					/>
 				))}
