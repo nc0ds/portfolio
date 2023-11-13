@@ -1,4 +1,5 @@
 import { useTechnologies } from './hooks/useTechnologies';
+
 import { Container, SimpleGrid, Heading, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
@@ -26,10 +27,12 @@ export function Technologies(): JSX.Element {
 				doesn't stop there.
 			</Text>
 			<SimpleGrid
+				as={motion.div}
 				mt='2rem'
 				columns={3}
 				justifyItems='center'
 				gap='2rem'
+				{...animations.iconsContainer}
 			>
 				{icons.map((item) => (
 					<TechIcon

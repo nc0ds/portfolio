@@ -88,6 +88,17 @@ export function useTechnologies() {
 				left: 0,
 			},
 		},
+		iconsContainer: {
+			position: 'relative' as 'relative',
+			initial: {
+				opacity: 0,
+				left: '-1rem',
+			},
+			whileInView: {
+				opacity: 1,
+				left: 0,
+			},
+		},
 	};
 
 	return {
