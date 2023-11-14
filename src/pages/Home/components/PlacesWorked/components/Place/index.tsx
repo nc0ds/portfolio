@@ -60,6 +60,7 @@ export function Place({
 				as='h3'
 				color='sand.sand12'
 				fontSize='3xl'
+				textDecoration={['underline', null, null, 'none']}
 			>
 				{name} ({dates.from} - {dates.to})
 			</Heading>

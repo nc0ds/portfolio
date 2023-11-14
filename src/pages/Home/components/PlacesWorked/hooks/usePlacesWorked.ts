@@ -3,7 +3,7 @@ export function usePlacesWorked() {
 		{
 			name: 'Webjump',
 			description:
-				'Maintenance and code creation in Next.js in an e-commerce project',
+				'Maintenance and code creation in Next.js in an e-commerce projects',
 			dates: {
 				from: '2022/01',
 				to: '2023/06',
