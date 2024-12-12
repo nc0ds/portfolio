@@ -1,0 +1,193 @@
+em {
+  color: var(--white);
+  font-style: normal;
+  text-shadow:
+    0 0 5px var(--white),
+    0 0 10px var(--white);
+}
+
+em[green] {
+  color: var(--green);
+  font-style: normal;
+  text-shadow:
+    0 0 5px var(--green),
+    0 0 10px var(--green);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--green);
+}
+
+button:hover {
+  color: var(--green-soft);
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green-soft);
+}
+
+a:hover > em[green] {
+  color: var(--green-soft);
+  font-style: normal;
+  text-shadow:
+    0 0 5px var(--green-soft),
+    0 0 10px var(--green-soft);
+}
+
+.container {
+  width: 100%;
+  max-width: 70rem;
+  padding: 0.8rem;
+}
+
+/* header section */
+
+header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+header > nav {
+  max-width: 24rem;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  header > a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  header > nav {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  header > div {
+    grid-column: 3 / 7;
+    grid-row: 1;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 600px) {
+  header > a {
+    grid-column: 1 / 4;
+  }
+
+  header > nav {
+    grid-column: 1 / 7;
+  }
+
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header > nav > ul {
+    justify-content: center;
+  }
+}
+
+/* page misc */
+
+section + section {
+  margin-top: 2rem;
+}
+
+#about > p + p {
+  margin-top: 1rem;
+}
+
+/* experiences section */
+
+#experiences > article {
+  margin-top: 1rem;
+}
+
+#experiences > article > h3 {
+  width: fit-content;
+}
+
+#experiences > article > ul {
+  list-style-position: inside;
+}
+
+#experiences > article > ul > li::marker {
+  color: var(--green);
+}
+
+/* education section */
+
+#education > article {
+  margin-top: 1rem;
+}
+
+#education .education-item-title {
+  color: var(--green);
+}
+
+#education > article > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+/* skills section */
+
+#skills > ul {
+  list-style: none;
+  margin-top: 1rem;
+  column-count: auto;
+}
+
+#skills > ul > li {
+  display: inline-block;
+  color: var(--green);
+}
+
+/* languages section */
+
+#languages > article {
+  margin-top: 1rem;
+}
+
+#languages > article > h3 {
+  color: var(--green);
+}
+
+/* contact section */
+
+#contact > ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
