@@ -3,6 +3,13 @@ import en from '../locales/en-us.mjs';
 const { localStorage } = window;
 const lang = localStorage.getItem('nathancaio_portfolio@language');
 
+const currentUserLanguage = window.navigator.language;
+
+if (currentUserLanguage !== 'pt-BR') {
+  localStorage.setItem('en-us');
+  window.location.reload();
+}
+
 const switchLangBtn = document.querySelector(
   'button[name=switch-language-btn]'
 );
