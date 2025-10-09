@@ -135,6 +135,17 @@ section + section {
   width: fit-content;
 }
 
+@media (max-width: 768px) {
+  #experiences > article > h3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#experiences > article > p[data-locale*='role'] {
+  margin-bottom: 1rem;
+}
+
 #experiences > article > ul {
   list-style-position: inside;
 }
