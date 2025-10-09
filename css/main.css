@@ -170,6 +170,13 @@ section + section {
   column-gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  #education > article > h3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* skills section */
 
 #skills > ul {
